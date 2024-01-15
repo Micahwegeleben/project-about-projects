@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# matching-game-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TODO:
+* add to todo list
+* Find database of questions, or flashcards. Quizlet? I am looking for words, not questions. 
+* Create Initial Webpage
 
-## Available Scripts
 
-In the project directory, you can run:
+IDEAS:
+* Maybe give each word multiple descriptons that can match it
+    IE: Agile:
+            1. Incremental and iterative project management.
+            2. What style of management would a project manager likely utilize in a personal project
+            3.
+* You are only garunteed 1 match.
+* Maybe make the cards appear on top and bottom instead of left and right, that way an easier control scheme can be used. (123, 890)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GAME FLOW: (panorama paramour or whatever the word was)
+    1. game Initialization
+    2. the words are generated on the left
+    3. the definitions/questions are generated on the right
+    4. the keys (QAZ, OKM) are displayed next to the boxes
+    5. A timer at 2 minutes begins.
+    6. From the generated words and definitions, 1 MUST be a guarunteed match, the others may or may not be matches
+    7. The player must select a combination of word and definition.
+        6a. If correct, the player gets points and the game moves on
+        6b. If incorrect, the game pauses and explains the correct answer. OR does this happen at the end of the game?
+    8. After a match is declared, the matching word on the left is replaced, and all 3 definitions are replaced (with 1 definition being a guarunteed match).
+    9. The player continues 7-8 until the time runs out.
+    10. At the end of the game, the player is given a score and accuracy, and is offered to review the ones they got wrong.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+DIFFERED DECISIONS:
+* 
 
-### `npm test`
+LINKS:
+https://quizlet.com/301131342/pmp-exam-pmbok-6th-edition-flash-cards/
+(PERFECT) https://www.brainscape.com/packs/pmbok-6th-edition-flash-cards-by-chapter-10586568
+    I intend to use this resource while creating my database, but rephrasing the definitions, providing multiple for variance, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+DONE:
+* Host on GitHub
+* Visualize the games board state
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
