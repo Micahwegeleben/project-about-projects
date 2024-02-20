@@ -1,0 +1,418 @@
+[
+  {
+    "Word": "ACCEPTANCE CRITERIA",
+    "Definition": "A set of conditions that is required to be met before deliverables are approved and received."
+  },
+  {
+    "Word": "ACCEPTED DELIVERABLES",
+    "Definition": "Products, results, or capabilities produced by a project and validated by the project customer or sponsors as meeting their specified acceptance criteria."
+  },
+  {
+    "Word": "ACTIVITY",
+    "Definition": "A distinct, scheduled portion of work performed during the course of a project."
+  },
+  {
+    "Word": "ACTIVITY DURATION ESTIMATES",
+    "Definition": "The quantitative assessments of the likely number of time periods that are required to complete an activity."
+  },
+  {
+    "Word": "ACTUAL DURATION",
+    "Definition": "The time in calendar units between the actual start date of the schedule activity and either the data date of the project schedule if the schedule activity is in progress or the actual finish date if the schedule activity is complete."
+  },
+  {
+    "Word": "AFFINITY DIAGRAM",
+    "Definition": "A technique that allows large numbers of ideas to be classified into groups for review and analysis."
+  },
+  {
+    "Word": "ANALYTICAL TECHNIQUES",
+    "Definition": "Various approaches used to evaluate or forecast potential outcomes based on possible variations of project or environmental variables and their relationships with other variables."
+  },
+  {
+    "Word": "ASSUMPTION",
+    "Definition": "A factor in the planning process that is considered to be true, real, or certain without proof or demonstration."
+  },
+  {
+    "Word": "BOTTOM-UP ESTIMATING",
+    "Definition": "A method of assessing project duration or cost by aggregating the appraisals of the lower-level components of the work breakdown structure (WBS)."
+  },
+  {
+    "Word": "BRAINSTORMING",
+    "Definition": "A general data gathering and creativity technique that can be used to identify risks, ideas, or solutions to issues by using a group of team members or subject matter experts."
+  },
+  {
+    "Word": "BUSINESS CASE",
+    "Definition": "A documented economic feasibility study used to establish validity of the benefits of a selected component lacking sufficient definition and that is used as a basis for the authorization of further project management activities."
+  },
+  {
+    "Word": "BUSINESS VALUE",
+    "Definition": "A concept that is unique to each organization and includes tangible and intangible elements. Through the effective use of project, program, and portfolio management disciplines, organizations will possess the ability to employ reliable, established processes to meet enterprise objectives and obtain a greater level of this from their investments."
+  },
+  {
+    "Word": "CHANGE CONTROL BOARD (CCB)",
+    "Definition": "A formally chartered group responsible for reviewing, evaluating, approving, delaying, or rejecting changes to the project and for recording and communicating such decisions."
+  },
+  {
+    "Word": "CHANGE CONTROL SYSTEM",
+    "Definition": "A set of procedures that describes how modifications to the project deliverables and documentation are managed and controlled."
+  },
+  {
+    "Word": "CHANGE LOG",
+    "Definition": "A comprehensive list of alterations made during the project. This typically includes dates of the adjustments and impacts in terms of time, cost, and risk."
+  },
+  {
+    "Word": "CLOSING PROCESS GROUP",
+    "Definition": "Those procedures performed to finalize all activities across all project areas to formally complete a project or phase."
+  },
+  {
+    "Word": "COLLECT REQUIREMENTS",
+    "Definition": "The process of determining, documenting, and managing stakeholder needs and requirements to meet project objectives."
+  },
+  {
+    "Word": "CONSTRAINT",
+    "Definition": "A limiting factor that affects the execution of a project, program, portfolio, or process."
+  },
+  {
+    "Word": "CONTROL ACCOUNT",
+    "Definition": "A management point where scope, budget, actual cost, and schedule are integrated and compared to earned value for performance measurement."
+  },
+  {
+    "Word": "COORDINATOR",
+    "Definition": "Person in a low-authority project management position who reports to a higher-level manager and has some authority and can make some decisions."
+  },
+  {
+    "Word": "CORRECTIVE ACTION",
+    "Definition": "An intentional activity that realigns the performance of the project work with the project management plan."
+  },
+  {
+    "Word": "CREATE WORK BREAKDOWN STRUCTURE",
+    "Definition": "The process of subdividing project work into smaller, more manageable components."
+  },
+  {
+    "Word": "CRITICAL PATH",
+    "Definition": "The sequence of activities that represents the longest course through a project, which determines the shortest possible duration."
+  },
+  {
+    "Word": "DATA REPRESENTATION TECHNIQUES",
+    "Definition": "Methods used to convey data and information graphically/visually."
+  },
+  {
+    "Word": "DEFECT REPAIR",
+    "Definition": "An intentional activity to modify a nonconforming product or product component."
+  },
+  {
+    "Word": "DEFINE ACTIVITIES",
+    "Definition": "The process of identifying and documenting the specific actions to be performed to produce the project deliverables."
+  },
+  {
+    "Word": "DEFINE SCOPE",
+    "Definition": "The process of developing a detailed description of the project and product."
+  },
+  {
+    "Word": "DELIVERABLE",
+    "Definition": "Any unique and verifiable product, result, or capability to perform a service that is produced to complete a process, phase, or project."
+  },
+  {
+    "Word": "DELPHI TECHNIQUE",
+    "Definition": "An information-gathering process used as a way to reach consensus of experts on a subject. Experts on the subject participate in this process anonymously. A facilitator uses a questionnaire to solicit ideas about the important project points related to the subject. The responses are summarized and are then recirculated to the experts for further comment. Consensus may be reached in a few rounds of this process. This process helps reduce bias in the data and keeps any one person from having undue influence on the outcome."
+  },
+  {
+    "Word": "DEVELOP PROJECT CHARTER",
+    "Definition": "The process of developing a document that formally authorizes the existence of a project and provides the project manager with the authority to apply organizational resources to project activities."
+  },
+  {
+    "Word": "DEVELOP SCHEDULE",
+    "Definition": "The process of analyzing activity sequences, durations, resource requirements, and availability constraints to create a project timeline model."
+  },
+  {
+    "Word": "DIRECT AND MANAGE PROJECT WORK",
+    "Definition": "The process of leading and performing the work defined in the project management plan and implementing approved changes to achieve the project�s objectives."
+  },
+  {
+    "Word": "EARLY FINISH DATE (EF)",
+    "Definition": "In the critical path method, the soonest possible point in time when the uncompleted portions of a schedule activity can be completed based on the schedule network logic, the data date, and any schedule constraints."
+  },
+  {
+    "Word": "EFFORT",
+    "Definition": "The number of labor units required to complete a schedule activity or work breakdown structure component, often expressed in hours, days, or weeks."
+  },
+  {
+    "Word": "EXPERT JUDGMENT",
+    "Definition": "Determination provided based upon specialization in an application area, knowledge area, discipline, industry, etc., as appropriate for the activity being performed. Such knowledge may be provided by any group or person with specialized education, understanding, skill, experience, or training."
+  },
+  {
+    "Word": "FACILITATION SKILLS",
+    "Definition": "Ability to lead a group discussion to attain a meeting goal."
+  },
+  {
+    "Word": "FAST TRACKING",
+    "Definition": "A schedule compression technique in which activities or phases normally done in sequence are performed in parallel for at least a portion of their duration."
+  },
+  {
+    "Word": "FINISH-TO-START (FS)",
+    "Definition": "A logical relationship in which a successor activity cannot begin until a predecessor activity has completed."
+  },
+  {
+    "Word": "FOCUS GROUPS",
+    "Definition": "An elicitation technique that brings together prequalified stakeholders and subject matter experts to learn about their expectations and attitudes about a proposed product, service, or result."
+  },
+  {
+    "Word": "FUNCTIONAL ORGANIZATION",
+    "Definition": "An organizational structure in which staff is grouped by areas of specialization and the project manager has limited authority to assign work and apply resources."
+  },
+  {
+    "Word": "GOVERNANCE SKILLS",
+    "Definition": "Ability to establish project objectives, policies, standards and process-improvement practices through a team decision-making process that aligns with the strategy of an organization."
+  },
+  {
+    "Word": "IDEA/MIND MAPPING",
+    "Definition": "Technique used to consolidate ideas created through individual brainstorming sessions into a single diagram to reflect commonality and differences in understanding and to generate new ideas."
+  },
+  {
+    "Word": "INCREMENTAL/ITERATIVE LIFE CYCLE",
+    "Definition": "An adaptive project life cycle in which the deliverable is produced through a series of iterations that successively add functionality within a predetermined time frame. The deliverable contains the necessary and sufficient capability to be considered complete only after the final iteration."
+  },
+  {
+    "Word": "INITIATING PROCESS GROUP",
+    "Definition": "Those procedures performed to define a new project or a new phase of an existing project by obtaining authorization to start the project or phase."
+  },
+  {
+    "Word": "ITERATIVE LIFE CYCLE",
+    "Definition": "A project life cycle where the project scope is generally determined early in the project life cycle, but time and cost estimates are routinely modified as the project team�s understanding of the product increases. Iterations develop the product through a series of repeated cycles, while increments successively add to the functionality of the product."
+  },
+  {
+    "Word": "KEY PERFORMANCE INDICATORS KPI(S)",
+    "Definition": "Quantifiable measurements that reflect a project�s critical success factors."
+  },
+  {
+    "Word": "LEAD",
+    "Definition": "The amount of time whereby a successor activity can be advanced with respect to a predecessor activity."
+  },
+  {
+    "Word": "LESSONS LEARNED REGISTER",
+    "Definition": "A project document used to record knowledge gained during a project so that it can be used in the current project and entered into a central repository."
+  },
+  {
+    "Word": "LEVEL OF EFFORT (LOE)",
+    "Definition": "An activity that does not produce definitive end products and is measures by the passage of time. [Note: This is one of three earned value management (EVM) types of activities used to measure work performance.]"
+  },
+  {
+    "Word": "MANAGE PROJECT KNOWLEDGE",
+    "Definition": "The process of using existing knowledge and creating new knowledge to achieve the project�s objectives and contribute to organizational learning."
+  },
+  {
+    "Word": "MANAGEMENT ELEMENTS",
+    "Definition": "The components that comprise the key functions or principles of general management in the organization, are allocated within the organization according to its governance framework and the organizational structure type selected."
+  },
+  {
+    "Word": "MANDATORY DEPENDENCY",
+    "Definition": "A relationship that is contractually required or inherent in the nature of the work."
+  },
+  {
+    "Word": "MATRIX ORGANIZATION",
+    "Definition": "Any organizational structure in which the project manager shares responsibility with the functional managers for assigning priorities and for directing the work of persons assigned to the project."
+  },
+  {
+    "Word": "MILESTONE",
+    "Definition": "A significant point or event in a project, program, or portfolio."
+  },
+  {
+    "Word": "MONITORING & CONTROLLING PROCESS GROUP",
+    "Definition": "Those actions required to track, review, and regulate the progress and performance of the project; identify any areas in which changes to the plan are required; and initiate the corresponding changes."
+  },
+  {
+    "Word": "MONTE CARLO SIMULATION",
+    "Definition": "An analysis technique where a computer model is iterated many times, with the input values chosen at random for each iteration driven by the input data, including probability distributions and probabilistic branches. Outputs are generated to represent the range of possible outcomes for the project."
+  },
+  {
+    "Word": "OBSERVATIONS",
+    "Definition": "A technique that provides a direct way of viewing individuals in their environment performing their jobs or tasks and carrying out processes."
+  },
+  {
+    "Word": "OPPORTUNITY COST",
+    "Definition": "The resources that an organization commits to a project and can�t simultaneously commit to other projects or business opportunities. Opportunity cost answers the question, �What alternative uses could this money, personnel, and/or equipment be put to?�"
+  },
+  {
+    "Word": "PARAMETRIC ESTIMATING",
+    "Definition": "A technique in which an algorithm is used to calculate cost or duration based on historical data and project parameters."
+  },
+  {
+    "Word": "PERFORM INTEGRATED CHANGE CONTROL",
+    "Definition": "The process of reviewing all change requests; approving changes and managing changes to deliverables, organizational process assets, project documents, and the project management plan; and communicating the decisions."
+  },
+  {
+    "Word": "PLAN SCOPE MANAGEMENT",
+    "Definition": "The process of creating a plan that documents how the project scope will be defined, validated, and controlled."
+  },
+  {
+    "Word": "PLANNING PACKAGE",
+    "Definition": "A work breakdown structure component below the control account and above the work package with known work content but without detailed schedule activities."
+  },
+  {
+    "Word": "PLANNING PROCESS GROUP",
+    "Definition": "Those processes required to establish the scope of the project, refine the objectives, and define the course of action required to attain the objectives that the project was undertaken to achieve."
+  },
+  {
+    "Word": "PORTFOLIO",
+    "Definition": "Projects, programs, and operations managed as a group to achieve strategic objectives."
+  },
+  {
+    "Word": "PREDECESSOR ACTIVITY",
+    "Definition": "An undertaking that logically comes before a dependent action in a schedule."
+  },
+  {
+    "Word": "PREDICTIVE LIFE CYCLE",
+    "Definition": "A type of project life cycle in which the project scope, and the time and cost required to deliver that scope, are determined as early in the process as possible."
+  },
+  {
+    "Word": "PREVENTATIVE ACTION",
+    "Definition": "An intentional activity that ensures the future performance of the project work is aligned with the project management plan."
+  },
+  {
+    "Word": "PROCESS",
+    "Definition": "A systematic series of activities directed towards causing an end result such that one or more inputs will be acted upon to create one or more outputs."
+  },
+  {
+    "Word": "PRODUCT LIFE CYCLE",
+    "Definition": "The series of phases that represent the evolution of a product, from concept through delivery, growth, maturity, and to retirement."
+  },
+  {
+    "Word": "PRODUCT-ORIENTED PROCESSES",
+    "Definition": "Procedures that specify and create the project�s product."
+  },
+  {
+    "Word": "PROGRAM",
+    "Definition": "A group of related projects and activities managed in a coordinated way to obtain benefits not available from managing them individually."
+  },
+  {
+    "Word": "PROJECT INITIATION",
+    "Definition": "Launching a process that can result in the authorization of a new project."
+  },
+  {
+    "Word": "PROJECT LIFE CYCLE",
+    "Definition": "The series of phases that a project passes through from its start to its completion."
+  },
+  {
+    "Word": "PROJECT MANAGEMENT",
+    "Definition": "The application of knowledge, skills, tools, and techniques to project activities to meet the project requirements."
+  },
+  {
+    "Word": "PROJECT MANAGEMENT INFORMATION SYSTEM (PMIS)",
+    "Definition": "A set of technological/software tools and techniques used to gather, integrate, and disseminate the outputs of project management processes"
+  },
+  {
+    "Word": "PROJECT MANAGER (PM)",
+    "Definition": "The person assigned by the performing organization to lead the team that is responsible for achieving the project objectives."
+  },
+  {
+    "Word": "PROJECT PHASE",
+    "Definition": "A collection of logically related project activities that culminates in the completion of one or more deliverables."
+  },
+  {
+    "Word": "PROJECT TEAM",
+    "Definition": "A set of individuals who support the project manager in performing the work of the project to achieve its objectives."
+  },
+  {
+    "Word": "PROTOTYPES",
+    "Definition": "A method of obtaining early feedback on requirements by providing a working model of the expected product before actually building it."
+  },
+  {
+    "Word": "QUESTIONNAIRES AND SURVEYS",
+    "Definition": "Written sets of questions designed to quickly accumulate information from a large number of respondents."
+  },
+  {
+    "Word": "REQUIREMENT",
+    "Definition": "A condition or capability that is prescribed to be present in a product, service, or result to satisfy a contract or other formally imposed specification."
+  },
+  {
+    "Word": "RESOURCE CALENDAR",
+    "Definition": "A docket that identifies the working days and shifts upon which each specific resource is available."
+  },
+  {
+    "Word": "RESOURCE HISTOGRAM",
+    "Definition": "A bar chart showing the amount of time that a resource is scheduled to work over a series of time periods. Resource availability may be depicted as a line for comparison purposes. Contrasting bars may show actual amounts of resources used as the project progresses."
+  },
+  {
+    "Word": "SCHEDULE BASELINE",
+    "Definition": "The approved version of a schedule model that can be changed using formal change control procedures and is used as the basis for comparison to actual results."
+  },
+  {
+    "Word": "SCOPE BASELINE",
+    "Definition": "The approved version of a scope statement, work breakdown structure (WBS), and its associated WBS dictionary, that can be changed using formal change control procedures and is used as a basis for comparison to actual results."
+  },
+  {
+    "Word": "SEQUENCE ACTIVITIES",
+    "Definition": "The process of identifying and documenting relationships among the project actions and tasks."
+  },
+  {
+    "Word": "START-TO-FINISH (SF)",
+    "Definition": "A logical relationship in which a successor activity cannot conclude until a predecessor activity has begun."
+  },
+  {
+    "Word": "START-TO-START (SS)",
+    "Definition": "A logical relationship in which a successor activity cannot begin until a predecessor activity has begun."
+  },
+  {
+    "Word": "SUCCESSOR ACTIVITY",
+    "Definition": "A dependent activity that logically comes after another activity in a schedule."
+  },
+  {
+    "Word": "SUNK COST",
+    "Definition": "Any previous investment that was made in a prior project or phase. These previous investments are irrelevant to a cost-benefit analysis because the only relevant question is whether an additional investment will generate profits."
+  },
+  {
+    "Word": "SWOT ANALYSIS",
+    "Definition": "Assessment of strengths, weaknesses, opportunities, and threats of an organization, project, or option."
+  },
+  {
+    "Word": "TACIT KNOWLEDGE",
+    "Definition": "Personal knowledge that can be difficult to articulate and share such as beliefs, experience, and insights."
+  },
+  {
+    "Word": "THREE-POINT ESTIMATE",
+    "Definition": "A technique used to approximate cost or duration by applying an average or weighted average of optimistic, pessimistic, and most likely figures when there is uncertainty with the individual activity appraisal."
+  },
+  {
+    "Word": "TOTAL FLOAT",
+    "Definition": "The amount of time that a schedule activity can be delayed or extended from its early start date without delaying the project finish date or violating a schedule constraint."
+  },
+  {
+    "Word": "VARIANCE ANALYSIS",
+    "Definition": "A technique for determining the cause and degree of difference between the baseline and actual performance."
+  },
+  {
+    "Word": "VARIANCE ANALYSIS",
+    "Definition": "A technique for determining the cause and degree of difference between the baseline and actual performance."
+  },
+  {
+    "Word": "VERIFICATION",
+    "Definition": "The evaluation of whether or not a product, service, or result complies with a regulation, requirement, specification, or imposed condition."
+  },
+  {
+    "Word": "VERIFIED DELIVERABLES",
+    "Definition": "Completed project products, services, activities that have been checked and confirmed for correctness through the Control Quality process."
+  },
+  {
+    "Word": "WBS (Work Breakdown Structure)",
+    "Definition": "A hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables."
+  },
+  {
+    "Word": "WHAT-IF SCENARIO ANALYSIS",
+    "Definition": "The process of evaluating possible events and outcomes in order to predict their effect on project objectives."
+  },
+  {
+    "Word": "WORK PACKAGE",
+    "Definition": "The work defined at the lowest level of the work breakdown structure for which cost and duration can be estimated and managed."
+  },
+  {
+    "Word": "WORK PERFORMANCE DATA",
+    "Definition": "The raw observations and measurements identified during activities performed to carry out the project work."
+  },
+  {
+    "Word": "WORK PERFORMANCE INFORMATION",
+    "Definition": "The conduct and efficiency data collected from various controlling processes, analyzed in context and integrated based on relationships across areas."
+  },
+  {
+    "Word": "WORK PERFORMANCE REPORTS",
+    "Definition": "The physical or electronic representation of work conduct and efficiency information compiled in project documents, intended to generate decisions, actions, or awareness."
+  }
+]
