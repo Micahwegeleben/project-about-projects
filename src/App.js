@@ -3,99 +3,89 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import React from "react"
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import CardsContainer from './components/CardsContainer.js';
+import shuffle from './components/shuffle.js';
 
-function CardsCreate(props) {
-  const handleToggle = () => {
-    props.clickButton(props.number);
-    console.log(props.shownText.Word)
-  };
 
-  return (
-    <Card sx={{ minWidth: 275 }}>
-      {
-        props.type === 1 ? <CardContent>{props.shownText.Word}</CardContent> : <CardContent>{props.shownText.Definition}</CardContent>
-      }
-      <Button
-        variant="contained"
-        color={props.isSelected ? 'error' : 'success'}
-        onClick={handleToggle}
-      >
-        {props.isSelected ? 'Unselect' : 'Select'}
-      </Button>
-      <br />
-      <br />
-    </Card>
-  );
-}
-
-function shuffle(array) {
-  let currentIndex = array.length, randomIndex;
-  while (currentIndex > 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
-  }
-  return array;
-}
 
 function App() {
-  const [selectedTitle, setSelectedTitle] = React.useState(false);
-  const [selectedDefinition, setSelectedDefinition] = React.useState(false);
+  const [selectedTitle, setSelectedTitle] = React.useState(null);
+  const [selectedDefinition, setSelectedDefinition] = React.useState(null);
   const [boxes, setBoxes] = React.useState(undefined)
-  React.useEffect(() => {
-    if (!boxes) {
+  const [score, setScore] = React.useState(0)
+  const [popup, setPopup] = React.useState(false);
+  const [correct, setCorrect] = React.useState(false);
+  
+
+  const handleClick = () => {setPopup(true)};
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
       return;
     }
-    setBoxes([...shuffle(boxes)]);
-  }, []);
+    setPopup(false);
+  };
   React.useEffect(() => {
-    fetch('https://mud-sedate-regnosaurus.glitch.me/')
+    fetch('http://54.200.189.210:5000/data.json')
       .then(response => response.json())
-      .then(boxes => setBoxes(boxes))
-  }, [])
+      .then(boxes => setBoxes(shuffle(boxes)))
+  }, []);
 
   return (
     <div className="App">
+      <p>Score: {score}</p>
       <Button variant="contained" onClick={() => {
         setBoxes([...shuffle(boxes)])
       }}> Shuffle </Button>
+      <Button variant="contained" onClick={() => {
+        if (selectedTitle === selectedDefinition && selectedTitle !== null && selectedDefinition !== null) {
+          setCorrect(true);
+          setBoxes([...shuffle(boxes)])
+          setSelectedTitle(null)
+          setSelectedDefinition(null)
+          setScore(score + 20)
+        }
+        else {
+          setCorrect(false);
+          setScore(score - 5)
+          //if score is negative, set score to 0
+          if (score < 5) {
+            setScore(0)
+          }
+        }
+        handleClick()
+      }}>Submit Guess
+      </Button>
+
+      <Snackbar open={popup} autoHideDuration={2200} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity={correct ? "success" : "error"}
+          variant="filled"
+          sx={{ width: '100%' }}
+        >
+          {correct ? "Correct! +20 points" : "Incorrect! -5 points"}
+        </Alert>
+      </Snackbar>
+
       <div className="grid-container">
         {boxes === undefined ? <p>Loading...</p> :
-          //What do I put here to make it so I can signal whether to show word or definition?
           <>
             <CardsContainer boxes={boxes.slice(0, 3)} wordOrText={0} selectThing={selectedTitle} setSelectThing={setSelectedTitle} />
             <CardsContainer boxes={boxes.slice(2, 5)} wordOrText={1} selectThing={selectedDefinition} setSelectThing={setSelectedDefinition} />
           </>
         }
       </div>
-      <Button variant="contained" onClick={() => {
-        console.log(selectedTitle, selectedDefinition)
-      }}> Submit Guess
-      </Button>
     </div>
   );
 }
 
 
-function CardsContainer({ boxes, wordOrText, selectThing, setSelectThing }) {
-  if (boxes === undefined) { return <p>Loading...</p>; }
-  const handleButtonClick = (number) => {setSelectThing(number === selectThing ? null : number)};
-  return (
-    <div className="grid-container">
-      {boxes.map((box, index) => (
-        <div key={index} className="box">
-          <CardsCreate
-            number={index + 1}
-            isSelected={selectThing === index + 1}
-            clickButton={handleButtonClick}
-            shownText={box}
-            type={wordOrText}
-          />
-        </div>
-      ))}
-    </div>
-  );
-}
+
+
+
+
 
 export default App;
