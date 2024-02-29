@@ -28,10 +28,12 @@ function App() {
     setPopup(false);
   };
   React.useEffect(() => {
-    fetch('http://54.200.189.210:5000/data.json')
+    fetch('https://mud-sedate-regnosaurus.glitch.me/')
       .then(response => response.json())
       .then(boxes => setBoxes(shuffle(boxes)))
   }, []);
+
+  
 
   return (
     <div className="App">

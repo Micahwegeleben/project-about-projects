@@ -1,0 +1,12 @@
+Scope:
+-Hotkeys
+-Timer
+-Start Menu
+-Score Menu
+-UI, appearance, vanity
+
+Schedule:
+-40 minutes minimum (class time)
+
+
+
