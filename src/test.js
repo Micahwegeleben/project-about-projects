@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ToggleButton = ({ label, hotkey, active, onClick }) => {
+const ToggleButton = ({ hotkey, active, onClick }) => {
   const buttonStyle = {
     backgroundColor: active ? 'green' : 'gray',
     color: 'white',
@@ -11,38 +11,16 @@ const ToggleButton = ({ label, hotkey, active, onClick }) => {
 
   return (
     <div style={buttonStyle} onClick={onClick}>
-      {label} ({hotkey})
+      Button: {hotkey} ({hotkey})
     </div>
   );
 };
 
 const App = () => {
-
   const [selectedTitle, setSelectedTitle] = useState([]);
-  
-  const [selectedDescription, setSelectedDescription] = useState([]);
 
-  const handleButtonClick = (hotkey) => {
-    if (selectedTitle.includes(hotkey)) {
-      setSelectedTitle((prevselectedTitle) =>
-        prevselectedTitle.filter((button) => button !== hotkey)
-      );
-    } else {
-      if (
-        selectedTitle.length < 2 &&
-        ((hotkey === 'Q' || hotkey === 'W' || hotkey === 'E'))
-      ) {
-        const sameSetButton = selectedTitle.find(
-          (button) => (button === 'Q' || button === 'W' || button === 'E') === (hotkey === 'Q' || hotkey === 'W' || hotkey === 'E')
-        );
-        if (sameSetButton) {
-          setSelectedTitle((prevselectedTitle) =>
-            prevselectedTitle.filter((button) => button !== sameSetButton)
-          );
-        }
-        setSelectedTitle((prevselectedTitle) => [...prevselectedTitle, hotkey]);
-      }
-    }
+  const handleButtonClick = (x) => {
+    setSelectedTitle(x === selectedTitle ? '' : x); 
   };
 
   const handleKeyDown = (event) => {
@@ -63,23 +41,20 @@ const App = () => {
   return (
     <div>
       <div>
-        <h3>Set 1:</h3>
+        <h3>Set 1: {selectedTitle}</h3>
         <ToggleButton
-          label="Button Q"
           hotkey="Q"
-          active={selectedTitle.includes('Q')}
+          active={selectedTitle === 'Q'}
           onClick={() => handleButtonClick('Q')}
         />
         <ToggleButton
-          label="Button W"
           hotkey="W"
-          active={selectedTitle.includes('W')}
+          active={selectedTitle === 'W'}
           onClick={() => handleButtonClick('W')}
         />
         <ToggleButton
-          label="Button E"
           hotkey="E"
-          active={selectedTitle.includes('E')}
+          active={selectedTitle === 'E'}
           onClick={() => handleButtonClick('E')}
         />
       </div>

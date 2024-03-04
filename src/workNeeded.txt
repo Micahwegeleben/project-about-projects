@@ -1,12 +1,17 @@
 Scope:
--Hotkeys
--Timer
--Start Menu
--Score Menu
--UI, appearance, vanity
+-COMPLETED - Hotkeys (3 hours)
+-Randomized Order (3 hours)
+-Timer (3 hours)
+-Start Menu (1 hour)
+-Score Menu (2 hours)
+-UI, appearance, vanity (spare time)
 
 Schedule:
 -40 minutes minimum (class time)
+-12 hours, An hour a day (personal time)
 
+Timeframe Goals:
+-Week 1 (29th-6th): Minumum playable state. Hotkeys, Random Cards. 6 hours expected
+-Week 2 (7th-12th): Polishing. Timer, Start Menu, Score Menu, UI. 6 hours expected
 
 
