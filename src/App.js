@@ -3,8 +3,8 @@ import Button from '@mui/material/Button';
 import React from 'react';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
-import CardsContainer from './components/CardsContainer.js';
-import shuffle from './components/shuffle.js';
+import CardsContainer from './components/CardsContainer';
+import shuffle from './components/shuffle';
 
 function App() {
   const [selectedTitle, setSelectedTitle] = React.useState(null);
@@ -109,7 +109,7 @@ function App() {
           submitGuess();
         }}
       >
-        Submit Guess
+        (R) Submit Guess
       </Button>
 
       <Snackbar open={popup} autoHideDuration={2200} onClose={handleClose}>
