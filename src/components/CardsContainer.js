@@ -36,7 +36,6 @@ function CardsCreate(props) {
   if (props.index === 2) {
     props.type === 0 ? (visualKey = '(E) ') : (visualKey = '(P) ');
   }
-
   const handleToggle = () => {
     props.buttonClickThing(props.shownText.Word);
   };

@@ -10,6 +10,8 @@ function App() {
   const [selectedTitle, setSelectedTitle] = React.useState(null);
   const [selectedDefinition, setSelectedDefinition] = React.useState(null);
   const [boxes, setBoxes] = React.useState(undefined);
+  const [subBoxes1, setSubBoxes1] = React.useState(undefined);
+  const [subBoxes2, setSubBoxes2] = React.useState(undefined);
   const [score, setScore] = React.useState(0);
   const [popup, setPopup] = React.useState(false);
   const [correct, setCorrect] = React.useState(false);
@@ -20,6 +22,8 @@ function App() {
       selectedTitle !== null &&
       selectedDefinition !== null
     ) {
+      setSubBoxes1(shuffle(boxes.slice(0, 3)));
+      setSubBoxes2(shuffle(boxes.slice(2, 5)));
       setCorrect(true);
       setBoxes(shuffle(boxes));
       setSelectedTitle(null);
@@ -32,6 +36,10 @@ function App() {
       if (score < 5) {
         setScore(0);
       }
+    }
+    if (score >= 100) {
+      alert('You win!');
+      window.location.reload();
     }
     setPopup(true);
   };
@@ -55,31 +63,38 @@ function App() {
   React.useEffect(() => {
     fetch('https://mud-sedate-regnosaurus.glitch.me/')
       .then(response => response.json())
-      .then(boxes => setBoxes(shuffle(boxes)));
+      .then(boxes => {
+        setBoxes(shuffle(boxes));
+        setSubBoxes1(shuffle(boxes.slice(0, 3)));
+        setSubBoxes2(shuffle(boxes.slice(2, 5)));
+      });
   }, []);
 
   const handleKeyDown = event => {
     const key = event.key.toUpperCase();
-    if (['Q'].includes(key)) {
-      buttonClickTitle(boxes[0].Word);
-    }
-    if (['W'].includes(key)) {
-      buttonClickTitle(boxes[1].Word);
-    }
-    if (['E'].includes(key)) {
-      buttonClickTitle(boxes[2].Word);
-    }
-    if (['I'].includes(key)) {
-      buttonClickDefinition(boxes[2].Word);
-    }
-    if (['O'].includes(key)) {
-      buttonClickDefinition(boxes[3].Word);
-    }
-    if (['P'].includes(key)) {
-      buttonClickDefinition(boxes[4].Word);
-    }
-    if (['R'].includes(key)) {
-      submitGuess();
+    console.log(boxes);
+    if (boxes !== undefined) {
+      if (['Q'].includes(key)) {
+        buttonClickTitle(boxes[0].Word);
+      }
+      if (['W'].includes(key)) {
+        buttonClickTitle(boxes[1].Word);
+      }
+      if (['E'].includes(key)) {
+        buttonClickTitle(boxes[2].Word);
+      }
+      if (['I'].includes(key)) {
+        buttonClickDefinition(boxes[2].Word);
+      }
+      if (['O'].includes(key)) {
+        buttonClickDefinition(boxes[3].Word);
+      }
+      if (['P'].includes(key)) {
+        buttonClickDefinition(boxes[4].Word);
+      }
+      if (['R'].includes(key)) {
+        submitGuess();
+      }
     }
   };
 
@@ -92,16 +107,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>Score: {score}</p>
-      <Button
-        variant="contained"
-        onClick={() => {
-          setBoxes([...shuffle(boxes)]);
-        }}
-      >
-        {' '}
-        Shuffle{' '}
-      </Button>
+      <p>Score: {score}/100</p>
 
       <Button
         variant="contained"
@@ -129,13 +135,13 @@ function App() {
         ) : (
           <>
             <CardsContainer
-              boxes={boxes.slice(0, 3)}
+              boxes={subBoxes1}
               type={0}
               selectedThing={selectedTitle}
               buttonClickThing={buttonClickTitle}
             />
             <CardsContainer
-              boxes={boxes.slice(2, 5)}
+              boxes={subBoxes2}
               type={1}
               selectedThing={selectedDefinition}
               buttonClickThing={buttonClickDefinition}
